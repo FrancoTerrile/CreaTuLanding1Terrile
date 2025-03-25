@@ -1,0 +1,29 @@
+/* .navList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+.navContainer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    align-items: flex-end;
+}
+
+.navContainer ul li{
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.searchBar{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.searchBar button{
+    margin-left: 10px;
+    margin-right: 10px;
+}
