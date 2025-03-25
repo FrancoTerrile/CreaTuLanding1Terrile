@@ -25,7 +25,7 @@ const App = () => {
     <div>
     <header><NavBar/></header>
     <section>
-    <ItemListContainer Guitarra="guitarra electrica"  producto={fenderStratocaster}/>
+    <ItemListContainer producto={fenderStratocaster}/>
     </section>
     </div>
   )

@@ -42,23 +42,26 @@ const NavBar = () => {
 
         <nav className="navbar fixed-top bg-body-tertiary">
             <div className="container-fluid navContainer" id="navbarSupportedContent">
-                <a className="navbar-brand">Navbar</a>
+                <a className="navbar-brand"><img className='navLogo' src="https://images.seeklogo.com/logo-png/45/1/guitar-center-new-2022-logo-png_seeklogo-451791.png" alt="guitar center logo"/> FMS</a>
                 <ul className="navbar-nav me-auto mb-4 mb-xl-0 navList">
                     <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#">Link</a>
+                    <a className="nav-link" href="#">Ofertas</a>
                     </li>
                     <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        Instrumentos
                     </a>
-                    {/* <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="#">Action</a></li>
-                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                        <li><a className="dropdown-item" href="#">Something else here</a></li>
-                    </ul> */}
+                    <ul className="dropdown-menu listaNav">
+                        <li><a className="dropdown-item" href="#">Guitarras</a></li>
+                        <li><a className="dropdown-item" href="#">Bajos</a></li>
+                        <li><a className="dropdown-item" href="#">Cuerdas y Accesorios</a></li>
+                    </ul>
+                    </li>
+                    <li className="nav-item">
+                    <a className="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
                     <form className="d-flex searchBar" role="search">
