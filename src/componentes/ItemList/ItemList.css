@@ -1,0 +1,12 @@
+.itemContainer{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 2fr);
+    margin-left: 10px;
+}
+
+.itemContainer .card{
+    margin: 10px;
+    height: 510px;
+    width: 18rem;
+}

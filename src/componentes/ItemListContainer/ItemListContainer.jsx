@@ -1,24 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./ItemListContainer.css"
+import { getProductos, getProductosPorCategoria, getProductosPorMarca } from '../../asyncmock'
+import ItemList from '../ItemList/ItemList'
+import { useParams } from 'react-router-dom'
 
 const ItemListContainer = ({Guitarra, producto}) => {
+    const [productos, setProductos] = useState([])
 
-  console.log(producto);
-  
+
+    const {idCategoria, idMarca} = useParams()
+
+    useEffect(()=>{
+      const funcionProductos = idCategoria ? getProductosPorCategoria : getProductos;
+      funcionProductos(idCategoria)
+        .then(res => setProductos(res))
+    },[idCategoria])  
+
+    useEffect(()=>{
+      const funcionProductos = idMarca ? getProductosPorMarca : getProductos;
+      funcionProductos(idMarca)
+        .then(res => setProductos(res))
+    },[idMarca]) 
 
   return (
-    <div>
-      <div>
-        <div className="card">
-          <div className="card-body">
-            <h5 className="card-title">{producto.nombre}</h5>
-            <h6 className="card-subtitle mb-2 text-body-secondary">{producto.marca}</h6>
-            <p className="card-text">{producto.description}</p>
-            <a href="#" className="card-link">U$D {producto.precio}</a>
-            <a href="#" className="card-link">{producto.categoria}</a>
-          </div>
-        </div>
-      </div> 
+    <div className='productosContainer'>
+      <ItemList productos={productos}/>
     </div>
   )
   

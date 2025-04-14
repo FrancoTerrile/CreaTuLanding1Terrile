@@ -1,32 +1,35 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Boton from './componentes/Boton/Boton'
 import NavBar from './componentes/NavBar/NavBar'
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer'
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 const App = () => {
-
-  const fenderStratocaster = {
-
-    nombre: "Fender Stratocaster 1979 AVRI",
-    marca: "Fender",
-    modelo: "Stratocaster",
-    description: "Breve descripción del instrumento",
-    categoria: "Guitarra Electrica",
-    precio: 2.399,
-  }
 
 
   return (
     <div>
-    <header><NavBar/></header>
-    <section>
-    <ItemListContainer producto={fenderStratocaster}/>
-    </section>
+
+    <BrowserRouter>
+    
+      <NavBar/>
+    
+    <Routes>
+      <Route path='/' element={<ItemListContainer/>}/>
+      <Route path='/categoria/:idCategoria' element={<ItemListContainer/>}/>
+      <Route path='/marca/:idMarca' element={<ItemListContainer/>}/>
+      <Route path='/item/:idItem' element={<ItemDetailContainer/>}/>
+    </Routes>
+    </BrowserRouter>
+
+   {/*  <section>
+    <ItemListContainer/>
+    <ItemDetailContainer/>
+    </section> */}
     </div>
   )
 }
