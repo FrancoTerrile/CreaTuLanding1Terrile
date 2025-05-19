@@ -2,15 +2,14 @@
 
 .card-body{
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
 
 /* Estilos del contenido del card */
 
-.card-body{
-    background: #cf464623;
-    background: linear-gradient(340deg, rgba(207, 70, 70, 1) 0%, rgba(255, 255, 255, 1) 9%);
-}
+
 
 .card-body img{
     width: 200px;

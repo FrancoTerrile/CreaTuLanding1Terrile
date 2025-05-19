@@ -1,0 +1,51 @@
+.cartItem_container{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cartItem_container .card{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    object-fit: cover;
+}
+
+.cartItem_container .card button{
+    border: none;
+    background-color: #fff;
+}
+
+.cartItem_container .card h4{
+    margin: auto;
+    font-size: medium;
+}
+
+.cartItem_container .card p{
+    margin: auto;
+    font-weight: 500;
+}
+
+.cartItem_container .card .trash_can{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.cartItem_container .card .trash_can:hover{
+    width: 26px;
+    height: 25px;
+    transform: rotate(360deg);
+    transition: 0.3s;
+}
+
+.cartItem_container .card .cart_img{
+    width: 60px;
+    height: fit-content;
+    object-fit: cover;
+    margin-left: 15px;
+}

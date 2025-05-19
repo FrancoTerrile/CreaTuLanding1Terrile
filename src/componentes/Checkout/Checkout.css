@@ -1,0 +1,50 @@
+.checkout_container{
+    padding-top: 70px;
+    margin-left: 15px;
+}
+
+.checkout_container .checkout_form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.checkout_container .checkout_form img{
+    width: 150px;
+    height: fit-content;
+}
+
+.checkout_container .checkout_form .data_form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.checkout_container .checkout_form .data_form div{
+    margin: 10px;
+}
+
+.checkout_container .checkout_form div h3{
+    font-size: medium;
+    font-weight: normal;
+}
+
+.checkout_container .checkout_form .product_checkout{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.checkout_container .checkout_form .product_checkout h3{
+    margin: 15px;
+}
+
+.checkout_container .checkout_form .product_checkout p{
+    margin: 15px;
+}

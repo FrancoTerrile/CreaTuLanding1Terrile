@@ -8,32 +8,12 @@ const NavBar = () => {
       <div className='navBar'>
         <nav className="navbar fixed-top bg-body-tertiary">
             <div className="container-fluid navContainer" id="navbarSupportedContent">
-                <a className="navbar-brand">
+                <a className="navbar-brand navHome">
                     <Link to='/'>
                         <img className='navLogo' src="https://images.seeklogo.com/logo-png/45/1/guitar-center-new-2022-logo-png_seeklogo-451791.png" alt="guitar center logo"/> FMS 
                     </Link>
                 </a>
                 <ul className="navbar-nav me-auto mb-4 mb-xl-0 navList">    
-                    <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Marcas</a>
-                    <ul className="dropdown-menu listaNav">
-                        <li>
-                            <NavLink to='marca/Fender'>
-                                <a className="dropdown-item" href="#">Fender</a>
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='marca/Gibson'>
-                                <a className="dropdown-item" href="#">Gibson</a>
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='marca/Gretsch'>
-                                <a className="dropdown-item" href="#">Gretsch</a>
-                            </NavLink>
-                        </li>
-                    </ul>
-                    </li>
                     <li className="nav-item">
                     <NavLink to='categoria/Guitarra Electrica'>
                         <a className="nav-link" href="#">Guitarras</a>
@@ -42,6 +22,21 @@ const NavBar = () => {
                     <li className="nav-item">
                     <NavLink to='categoria/Bajo'>
                         <a className="nav-link" href="#">Bajos</a>
+                    </NavLink>
+                    </li>
+                    <li className="nav-item">
+                    <NavLink to='marca/Fender'>
+                        <a className="nav-link" href="#">Fender</a>
+                    </NavLink>
+                    </li>
+                    <li className="nav-item">
+                    <NavLink to='marca/Gibson'>
+                        <a className="nav-link" href="#">Gibson</a>
+                    </NavLink>
+                    </li>
+                    <li className="nav-item">
+                    <NavLink to='marca/Gretsch'>
+                        <a className="nav-link" href="#">Gretsch</a>
                     </NavLink>
                     </li>
                 </ul>

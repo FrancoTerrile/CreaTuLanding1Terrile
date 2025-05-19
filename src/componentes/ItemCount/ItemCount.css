@@ -1,0 +1,38 @@
+.ItemCount-Container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.Button-Container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button-Container button{
+    width: 35px;
+    height: 30px;
+    align-items: center;
+    background-color: white;
+    border: none;
+}
+
+.Button-Container button:hover{
+    background-color: lightgray;
+    transition: 0.3s;
+    font-size: larger;
+}
+
+.AddCarrito-Container button{
+    border-radius: 10%;
+    width: 145px;
+    font-size: 15px;
+}
+
+.AddCarrito-Container button:hover{
+    background-color: lightgray;
+    transition: 0.3s;
+}
