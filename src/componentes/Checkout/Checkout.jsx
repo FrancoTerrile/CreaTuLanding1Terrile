@@ -23,7 +23,7 @@ const Checkout = () => {
        
 
         if(!nombre || !apellido || !telefono || !email || !emailConfirmacion) {
-            setError ("Por favor completar todos los campos del formulario")
+            setError ("Por favor completar formulario para efectuar compra")
             return
         }
 
